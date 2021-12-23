@@ -4,10 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
 
 @NgModule({
-  declarations: [AppComponent, ServerComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
