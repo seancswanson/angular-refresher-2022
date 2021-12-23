@@ -1,0 +1,11 @@
+<div
+  class="alert"
+  [ngClass]="{
+    'alert-success': alertType === 'success',
+    'alert-warning': alertType === 'warning'
+  }"
+  [ngSwitch]="alertType"
+>
+  <app-success-alert *ngSwitchCase="'success'"></app-success-alert>
+  <app-warning-alert *ngSwitchCase="'warning'"></app-warning-alert>
+</div>
