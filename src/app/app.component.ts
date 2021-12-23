@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  username: string = '';
+  username: string;
 
+  constructor() {
+    this.username = 'usernameExample';
+  }
   public resetUsername() {
     this.username = '';
     console.log('resetUsername()');
