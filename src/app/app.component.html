@@ -3,7 +3,19 @@
     <div class="col-xs-12">
       <h3>Hello, world!</h3>
       <hr />
-      <app-servers></app-servers>
+      <input type="text" />
+      <button
+        class="btn btn-primary"
+        [disabled]="username.length <= 0"
+        type="submit"
+        (click)="(resetUsername)"
+        [(ngModel)]="username"
+      >
+        Reset Username
+      </button>
+      <p>
+        {{ username }}
+      </p>
     </div>
   </div>
 </div>
